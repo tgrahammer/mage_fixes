@@ -1,0 +1,13 @@
+diff --git a/downloader/lib/Mage/HTTP/Client/Curl.php b/downloader/lib/Mage/HTTP/Client/Curl.php
+index a777beb..1a39b19 100644
+--- a/downloader/lib/Mage/HTTP/Client/Curl.php
++++ b/downloader/lib/Mage/HTTP/Client/Curl.php
+@@ -380,7 +380,7 @@ implements Mage_HTTP_IClient
+          * @link http://php.net/manual/ru/function.curl-setopt.php
+          */
+ 
+-        $this->curlOption(CURLOPT_SSLVERSION, 1);
++        $this->curlOption(CURLOPT_SSLVERSION, 5);
+         $this->getCurlMethodSettings($method, $params, $isAuthorizationRequired);
+ 
+         if(count($this->_headers)) {
